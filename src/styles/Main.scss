@@ -1,9 +1,9 @@
 :root {
-  @include theme-vars($light-theme);
+  @include theme-vars($dark-theme);
 }
 
-[data-theme="dark"] {
-  @include theme-vars($dark-theme);
+[data-theme="light"] {
+  @include theme-vars($light-theme);
 }
 
 body {

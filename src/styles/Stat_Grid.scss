@@ -1,0 +1,71 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+
+  .stat-card {
+    position: relative;
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 2rem;
+    cursor: url('../assets/images/hand.png'), pointer;
+    border-radius: 6px;
+    overflow: hidden;
+  
+    transition: transitions((background-color, color), .4s, ease-out);
+
+    &:hover {
+      background-color: var(--hover-bg);
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: var(--accent);
+      z-index: 100;
+    }
+  
+    &.facebook   { --accent: #{$facebook-blue-600}; }
+    &.twitter    { --accent: #{$twitter-blue-500}; }
+    &.instagram  { --accent: #{$instagram-gradient}; }
+    &.youtube    { --accent: #{$youtube-red-700}; }
+  
+    .stat-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      font-weight: $font-weight-bold;
+    }
+
+    .stat-numbers {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      color: var(--text);
+      margin-top: 1.4rem;
+    }
+
+    .stat-label {
+      text-transform: uppercase;
+      font-size: $font-size-xs;
+      letter-spacing: 5px;
+      margin: .5rem 0 1.4rem;
+    }
+
+    .stat-delta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .2rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  // @media (min-width: 1024px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  // }
+}

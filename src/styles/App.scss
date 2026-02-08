@@ -1,0 +1,45 @@
+#root {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  color: var(--text-muted);
+  padding: 2.5rem clamp(1.5rem, 8vw, 8rem);
+}
+
+.dashboard-heade {
+  margin-bottom: 2.4rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #switch-toggle {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .dashboard-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: var(--text);
+    margin-bottom: .5rem;
+  }
+
+  hr {
+    margin: 1.4rem 0;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.up {
+  color: $green-500;
+}
+
+.down {
+  color: $red-500;
+}

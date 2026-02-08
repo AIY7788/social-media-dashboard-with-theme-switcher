@@ -1,0 +1,12 @@
+:root {
+  @include theme-vars($light-theme);
+}
+
+[data-theme="dark"] {
+  @include theme-vars($dark-theme);
+}
+
+body {
+  background-color: var(--bg);
+  transition: transitions((background-color, color), 0.6s, ease-out);
+}

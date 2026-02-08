@@ -1,0 +1,56 @@
+.overview {
+  margin-top: 2.6rem;
+
+  .overview-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    margin-bottom: 2rem;
+  }
+
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .overview-card {
+    background-color: var(--card-bg);
+    padding: 1.4rem 2rem 1.4rem 1.4rem;
+    border-radius: 6px;
+    cursor: url('../assets/images/hand.png'), pointer;
+    transition: transitions((background-color, color), .6s, ease-out);
+
+    &:hover {
+      background-color: var(--hover-bg);
+    }
+
+    .overview-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .overview-label {
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .overview-change {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+
+      .overview-value {
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        color: var(--text);
+      }
+
+      .overview-trend {
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@use "sass:color";
+
+/* =========================
+   Primary
+========================= */
+$green-500: hsl(163, 72%, 41%);
+$red-500: hsl(356, 69%, 56%);
+
+/* Social */
+$facebook-blue-600: hsl(208, 92%, 53%);
+$twitter-blue-500: hsl(203, 89%, 53%);
+$youtube-red-700: hsl(348, 97%, 39%);
+
+/* Instagram Gradient */
+$instagram-gradient: linear-gradient(
+  90deg,
+  hsl(37, 97%, 70%),
+  hsl(5, 77%, 71%),
+  hsl(329, 70%, 58%)
+);
+
+/* Toggle */
+
+$hover-toggle: linear-gradient(
+   90deg,
+   hsl(210, 79%, 56%),
+   hsl(146, 68%, 55%)
+);
+
+/* =========================
+   Typography
+========================= */
+
+$font-family-base: "Inter", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$font-size-xs: 0.75rem;  
+$font-size-sm: 0.875rem; 
+$font-size-base: 1rem;   
+$font-size-lg: 1.6rem;   
+$font-size-xl: 4rem;   
+
+/* =========================
+Light Theme
+========================= */
+$light-theme: (
+   bg: hsl(0, 100%, 100%),
+   top-bg: hsl(225, 100%, 98%),
+   card-bg: hsl(227, 47%, 96%),
+   text-muted: hsl(228, 12%, 44%),
+   texts: hsl(230, 17%, 14%),
+   toggle: hsl(230, 22%, 74%),
+   hover-bg: color.scale(hsl(230, 22%, 74%), $blackness: 2%),
+   focus: $twitter-blue-500
+);
+   
+/* =========================
+Dark Theme
+========================= */
+$dark-theme: (
+   bg: hsl(230, 17%, 14%),
+   top-bg: hsl(232, 19%, 15%),
+   card-bg: hsl(228, 28%, 20%),
+   text-muted: hsl(230, 22%, 74%),
+   texts: hsl(0, 100%, 100%),
+   toggle: linear-gradient(
+      90deg,
+      hsl(210, 79%, 56%),
+      hsl(146, 68%, 55%)
+   ),
+   hover-bg: color.scale(hsl(228, 28%, 20%), $lightness: 15%),
+   focus: $green-500
+);

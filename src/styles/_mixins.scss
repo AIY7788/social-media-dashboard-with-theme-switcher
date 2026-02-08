@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+@mixin theme-vars($theme-map) {
+  --bg: #{map.get($theme-map, bg)};
+  --top-bg: #{map.get($theme-map, top-bg)};
+  --card-bg: #{map.get($theme-map, card-bg)};
+  --text-muted: #{map.get($theme-map, text-muted)};
+  --text: #{map.get($theme-map, texts)};
+  --toggle: #{map.get($theme-map, toggle)};
+
+  --hover-bg: #{map.get($theme-map, hover-bg)};
+  --hover-toggle: #{map.get($theme-map, hover-toggle)};
+  --focus: #{map.get($theme-map, focus)};
+}

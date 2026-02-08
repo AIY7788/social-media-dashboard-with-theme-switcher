@@ -12,7 +12,11 @@ type OverviewStats = {
   trend: string;
 }[];
 
-function Overviews({ overviewStats }: { overviewStats: OverviewStats }) {
+interface OverviewProps {
+  overviewStats: OverviewStats;
+}
+
+function Overviews({ overviewStats }: OverviewProps) {
   return (
     <section className="overview">
       <h2 className="overview-title">Overview - Today</h2>

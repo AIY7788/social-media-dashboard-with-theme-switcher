@@ -14,11 +14,11 @@ type SocialStats = {
   trend: string;
 }[];
 
-interface Stat_GridProp {
+interface StatGridProp {
   socialStats: SocialStats;
 }
 
-function Stat_Grid({ socialStats }: Stat_GridProp) {
+function StatGrid({ socialStats }: StatGridProp) {
   return (
     <div className="stats-grid">
       {socialStats.map((stat, idex) => (
@@ -43,4 +43,4 @@ function Stat_Grid({ socialStats }: Stat_GridProp) {
   );
 }
 
-export default Stat_Grid;
+export default StatGrid;

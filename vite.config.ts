@@ -14,9 +14,11 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
+          @use "reset-css/reset";
           @use "sass:color";
           @use "@/styles/variables" as *;
           @use "@/styles/functions" as *;
+          @use "@/styles/mixins" as *;
         `
       }
     }

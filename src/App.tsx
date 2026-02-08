@@ -1,9 +1,9 @@
-import { formatWithComma } from "./utils/formatNumber";
-import { overviewStats } from "./assets/data/overviews.mock";
-import { socialStats } from "./assets/data/socials.mock";
-import Stat_Grid from "./components/StatGrid";
-import Overviews from "./components/Overviews";
-import Switch_Theme from "./components/SwitchTheme";
+import { formatWithComma } from "@/utils/formatNumber";
+import { overviewStats } from "@/assets/data/overviews.mock";
+import { socialStats } from "@/assets/data/socials.mock";
+import Stat_Grid from "@/components/stat-grid/StatGrid";
+import Overviews from "@/components/overviews/Overviews";
+import Switch_Theme from "@/components/switch-theme/SwitchTheme";
 import '@/styles/App.scss'
 
 function App() {

@@ -1,7 +1,7 @@
-import iconDown from "../assets/images/icon-down.svg";
-import iconUp from "../assets/images/icon-up.svg";
-import { formatNumber } from "../utils/formatNumber";
-import '@/styles/Overview.scss';
+import iconDown from "@/assets/images/icon-down.svg";
+import iconUp from "@/assets/images/icon-up.svg";
+import { formatNumber } from "@/utils/formatNumber";
+import './Overviews.scss';
 
 type OverviewStats = {
   platform: string;
@@ -18,8 +18,8 @@ function Overviews({ overviewStats }: { overviewStats: OverviewStats }) {
       <h2 className="overview-title">Overview - Today</h2>
 
       <div className="overview-grid">
-        {overviewStats.map((overview) => (
-          <div className="overview-card">
+        {overviewStats.map((overview, index) => (
+          <div key={index} className="overview-card">
             <div className="overview-header">
               <span className="overview-label">{overview.label}</span>
               <img src={overview.icon} alt={overview.platform} />

@@ -1,9 +1,10 @@
 import { formatWithComma } from "./utils/formatNumber";
-import { socialStats, overviewStats } from "./assets/data";
-import Stat_Grid from "./components/Stat_Grid";
+import { overviewStats } from "./assets/data/overviews.mock";
+import { socialStats } from "./assets/data/socials.mock";
+import Stat_Grid from "./components/StatGrid";
 import Overviews from "./components/Overviews";
-import Switch_Theme from "./components/Switch_Theme";
-import './styles/App.scss'
+import Switch_Theme from "./components/SwitchTheme";
+import '@/styles/App.scss'
 
 function App() {
 

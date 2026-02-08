@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/Switch_Theme.scss";
+import "@/styles/Switch_Theme.scss";
 
 function Switch_Theme() {
   

@@ -1,7 +1,7 @@
 import iconDown from "../assets/images/icon-down.svg";
 import iconUp from "../assets/images/icon-up.svg";
 import { formatNumber } from "../utils/formatNumber";
-import '../styles/Overview.scss';
+import '@/styles/Overview.scss';
 
 type OverviewStats = {
   platform: string;

@@ -16,9 +16,9 @@ export default defineConfig({
         additionalData: `
           @use "reset-css/reset";
           @use "sass:color";
-          @use "@/styles/variables" as *;
-          @use "@/styles/functions" as *;
-          @use "@/styles/mixins" as *;
+          @use "@/styles/abstracts/variables" as *;
+          @use "@/styles/abstracts/functions" as *;
+          @use "@/styles/abstracts/mixins" as *;
         `
       }
     }

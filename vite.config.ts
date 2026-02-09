@@ -23,4 +23,5 @@ export default defineConfig({
       }
     }
   },
+  base: "/social-media-dashboard-with-theme-switcher"
 })

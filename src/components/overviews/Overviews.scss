@@ -18,7 +18,7 @@
     padding: 1.4rem 2rem 1.4rem 1.4rem;
     border-radius: 6px;
     cursor: url('../assets/images/hand.png'), pointer;
-    transition: transitions((background-color, color), .6s, ease-out);
+    transition: transitions((background-color, color), .6s);
 
     &:hover {
       background-color: var(--hover-bg);

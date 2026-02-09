@@ -1,7 +1,10 @@
 @use "sass:list";
 
 @function transitions (
-  $property, $duration, $timing-function, $delay: 0s
+  $property,
+  $duration, 
+  $timing-function: cubic-bezier(0.42,-0.26, 0.25, 0.23), 
+  $delay: 0s
 ) {
   $transition-properties: ();
   @each $property in $property {
